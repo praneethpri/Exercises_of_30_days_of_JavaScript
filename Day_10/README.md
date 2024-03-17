@@ -18,7 +18,7 @@ for (let i = 1; i <= 10; i++) {
 }
 ```
 
-3)Remove an element from a set 
+3) Remove an element from a set 
 ```
 let removeElement = new Set()
 for (let j = 0; j < 10; j++) {
@@ -38,7 +38,7 @@ clearSet.clear()
 
 ```
 
-5)Create a set of 5 string elements from array 
+5) Create a set of 5 string elements from array 
 ```
 let arr = ['Blue', 'Orange', 'Red', 'Black', 'White']
 let newSet = new Set(arr)
