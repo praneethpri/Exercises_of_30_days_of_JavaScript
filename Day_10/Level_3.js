@@ -7,7 +7,7 @@ languagesFlattened = languages.flat()
 let Languages = new Set(languagesFlattened)
 
 // 2) Use the countries data to find the 10 most spoken languages
-function mostSpokenLanguages() {
+function mostSpokenLanguages(arr, count) {
 
 }
 
