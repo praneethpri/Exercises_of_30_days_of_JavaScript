@@ -77,4 +77,6 @@ let {width, area, height, perimeter} = rectangle;
 console.log(width, area, height, perimeter)
 ```
 
+```javascript
 module.exports = users;
+```
