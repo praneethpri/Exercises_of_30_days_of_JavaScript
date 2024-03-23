@@ -30,4 +30,4 @@ function mostFrequentWords(string, num) {
   }
 }
 
-//console.log(mostFrequentWords(cleanText(sentence), 5))
+console.log(mostFrequentWords(cleanText(sentence), 5))

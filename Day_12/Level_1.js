@@ -5,7 +5,7 @@ let result = txt.match(pattern)
 let resultNumber = [];
 result.forEach((elem) => resultNumber.push(parseInt(elem)))
 let resultCounted = resultNumber.reduce((acc, cur) => { return acc + cur }, 0)
-//console.log(resultCounted)
+console.log(resultCounted)
 
 // 2) The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles. 
 const txt2 = 'The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.'
@@ -16,14 +16,14 @@ result2.forEach((elem) => result2Number.push(parseInt(elem)))
 let minNumber = Math.min(...result2Number)
 let maxNumber = Math.max(...result2Number)
 let distance = maxNumber - minNumber
-//console.log(distance)
+console.log(distance)
 
 // 3) Write a pattern which identify if a string is a valid JavaScript variable
 function is_valid_variable(string) {
   let pattern = /^[a-z]+(_{1})\w+|^\D\w+$/g
   let result = pattern.test(string)
   
-  //console.log(result)
+  console.log(result)
 }
 
 is_valid_variable('first_name') 

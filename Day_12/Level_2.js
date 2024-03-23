@@ -11,13 +11,13 @@ function tenMostFrequentWords(string, num) {
       returnObj.push(obj)
     }
     let returnObjSorted = returnObj.sort((a, b) => {return b.count - a.count})
-  if (arguments.length == 1) {
+  if (arguments.length === 1) {
     return returnObjSorted
   }
-  else {
+  else if (arguments.length === 2) {
     let returnObjSortedCount = [];
-    for (let j = 0; j < num; j++) {
-      returnObjSortedCount.push(returnObjSorted)
+    for (let k = 0; k < num; k++) {
+      returnObjSortedCount.push(returnObjSorted[k])
     }
     return returnObjSortedCount;
   }
