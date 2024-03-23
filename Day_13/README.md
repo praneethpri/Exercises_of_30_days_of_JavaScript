@@ -27,7 +27,7 @@
 
 ![console warn](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_13/Exercise%20%3A%20Level%202/console_warn.png)
 
-3)     Write an error message using console.error()
+3) Write an error message using console.error()
 
 ![console error](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_13/Exercise%20%3A%20Level%202/console_error.png)
 
