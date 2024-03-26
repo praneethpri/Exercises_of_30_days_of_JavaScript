@@ -86,12 +86,31 @@ console.log('Standard Deviation : ', x.standard_deviation(ages))
 
 // 2) Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description. 
 class PersonAccount {
-  constructor(firstName, lastName, incomes, expenses) {
+  constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.incomes = incomes;
-    this.expenses = expenses;
+    this.incomes = [];
+    this.expenses = [];
   }
-  totalIncome(newIncome) {
+  totalIncome() {
+    return this.incomes
+  }
+  totalExpense() {
+    return this.expenses
+  }
+  accountInfo() {
+    let returnString = `
+First Name : ${this.firstName}
+Last Name : ${this.lastName}
+Incomes : ${this.incomes}
+Expenses : ${this.expenses}
+`
+      return returnString;
+  }
+  set addIncome(newIncome) {
+    this.incomes.push(newIncome)
+  }
+  set addExpenses(newExpense) {
+    this.expenses.push(newExpense)
   }
 }
