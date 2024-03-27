@@ -1,12 +1,12 @@
 1) Write a single line comment which says, comments can make code readable
 ```javascript
-commnets can make code readable
+// commnets can make code readable
 ```
 
 
 2) Write another single comment which says, Welcome to 30DaysOfJavaScript
 ```javascript
-Welcome to 30DaysOfJavaScript
+// Welcome to 30DaysOfJavaScript
 ```
 
 3) Write a multiline comment which says, comments can make code readable, easy to reuse and informative
@@ -14,9 +14,13 @@ Welcome to 30DaysOfJavaScript
 /* Comments can make code readable, easy to reuse and informative */
 ```
 
-4) Create a variable.js file and declare variables and assign string, boolean, undefined and null data types 
+4) Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
+
+![variable.js](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_01/datatypes.js)
 
 5) Create datatypes.js file and use the JavaScript typeof operator to check different data types. Check the data type of each variable
+
+![datatypes.js](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_01/datatypes.js)
 
 6) Declare four variables without assigning values
 ```javascript
@@ -49,4 +53,4 @@ let myFirstName2 = 'Praneeth', myLastName2 = 'Priyankara', myMaritalStatus2 = tr
 ```
 
 10) Declare two variables myAge and yourAge and assign them initial values and log to the browser console.
-![varible console logging]()
+![varible console logging](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_01/variable_console_logging.png)
