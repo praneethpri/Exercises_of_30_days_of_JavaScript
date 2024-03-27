@@ -6,7 +6,7 @@
 
 // 4) Change all the string characters to capital letters using toUpperCase() method
 
-// 5) Change all the string characters to lowercase letters using toLowerCase() method 
+// 5) Change all the string characters to lowercase letters using toLowerCase() method
 
 // 6) Cut (slice) out the first word of the string using substr() or substring() method
 
@@ -18,7 +18,7 @@
 
 // 10) Split the string 30 Days Of JavaScript at the space using split() method
 
-// 11) 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array. 
+// 11) 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
 
 // 12) Change 30 Days Of JavaScript to 30 Days Of Python using replace() method.
 
