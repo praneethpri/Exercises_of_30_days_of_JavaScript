@@ -1,3 +1,7 @@
+## Day 01
+
+#### Exercises
+
 1) Write a single line comment which says, comments can make code readable
 ```javascript
 // commnets can make code readable
