@@ -1,8 +1,11 @@
 // 1) Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'.
+![1.png](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_02/assets/01.png)
 
 // 2) Print the string on the browser console using console.log()
+![2.png](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_02/assets/02.png)
 
 // 3) Print the length of the string on the browser console using console.log()
+![3.png](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_02/assets/03.png)
 
 // 4) Change all the string characters to capital letters using toUpperCase() method
 
