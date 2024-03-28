@@ -61,5 +61,8 @@ false
 true
 //      = 4 === '4'
 false
-
+//      - Find the length of python and jargon and make a falsy comparison statement.
+let python = 'python'
+let jargon = 'jargon'
+console.log(python.length != jargon.length)
 
