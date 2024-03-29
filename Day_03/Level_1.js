@@ -66,3 +66,49 @@ let python = 'python'
 let jargon = 'jargon'
 console.log(python.length != jargon.length)
 
+// 6) Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+//      - 4 > 3 && 10 < 12 
+true
+//      - 4 > 3 && 10 > 12
+false
+//      - 4 > 3 || 10 < 12 
+true
+//      - 4 > 3 || 10 > 12
+true
+//      - !(4 > 3)
+false
+//      - !(4 < 3)
+true
+//      - !(false)
+true
+//      - !(4 > 3 && 10 < 12)
+false
+//      - !(4 > 3 && 10 > 12)
+true
+//      - !(4 === '4')
+false
+//      - There is no 'on' in both dragon and python
+console.log(python.includes('on') && jargon.includes('on'))
+true
+
+
+// 7) Use the Date object to do the following activities
+let date = new Date()
+//      - What is the year today?
+console.log(date.getFullYear())
+//      - What is the month today as a number?
+console.log(date.getMonth())
+//      - What is the date today?
+console.log(date.getDate())
+//      - What is the day today as a number?
+console.log(date.getDay())
+//      - What is the hours now?
+console.log(date.getHours())
+//      - What is the minutes now?
+console.log(date.getMinutes())
+//      - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+let milliSec = Date.parse("1970-01-01")
+let dateNow = new Date()
+let dateNowMilliSec = Date.parse(dateNow)
+let seconds = (dateNowMilliSec - milliSec) / 1000
+console.log(seconds)
