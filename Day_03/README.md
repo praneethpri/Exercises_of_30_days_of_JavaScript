@@ -56,47 +56,47 @@ console.log(false)
 ```
 
 5) Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
-     - 4 > 3
+  - 4 > 3
 ```js
 true
 ```
-     - 4 >= 3
+  - 4 >= 3
 ```js
 false
 ```
-     - 4 < 3
+  - 4 < 3
 ```js
 false
 ```
-     - 4 <= 3
+  - 4 <= 3
 ```js
 false
 ```
-     - 4 == 4
+  - 4 == 4
 ```js
 true
 ```
-     - 4 === 4
+  - 4 === 4
 ```js
 true
 ```
-     - 4 != 4
+  - 4 != 4
 ```js
 false
 ```
-     - 4 != '4'
+  - 4 != '4'
 ```js
 false
 ```
-     - 4 == '4'
+  - 4 == '4'
 ```js
 true
 ```
-     - 4 === '4'
+  - 4 === '4'
 ```js
 false
 ```
-     - Find the length of python and jargon and make a falsy comparison statement.
+  - Find the length of python and jargon and make a falsy comparison statement.
 ```js
 let python = 'python'
 let jargon = 'jargon'
