@@ -104,47 +104,47 @@ console.log(python.length != jargon.length)
 ```
 
 6) Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
-     - 4 > 3 && 10 < 12 
+  - 4 > 3 && 10 < 12 
 ```js
 true
 ```
-     - 4 > 3 && 10 > 12
+  - 4 > 3 && 10 > 12
 ```js
 false
 ```
-     - 4 > 3 || 10 < 12 
+  - 4 > 3 || 10 < 12 
 ```js
 true
 ```
-     - 4 > 3 || 10 > 12
+  - 4 > 3 || 10 > 12
 ```js
 true
 ```
-     - !(4 > 3)
+  - !(4 > 3)
 ```js
 false
 ```
-     - !(4 < 3)
+  - !(4 < 3)
 ```js
 true
 ```
-     - !(false)
+  - !(false)
 ```js
 true
 ```
-     - !(4 > 3 && 10 < 12)
+  - !(4 > 3 && 10 < 12)
 ```js
 false
 ```
-     - !(4 > 3 && 10 > 12)
+  - !(4 > 3 && 10 > 12)
 ```js
 true
 ```
-     - !(4 === '4')
+  - !(4 === '4')
 ```js
 false
 ```
-     - There is no 'on' in both dragon and python
+  - There is no 'on' in both dragon and python
 ```js
 console.log(python.includes('on') && jargon.includes('on'))
 true
@@ -153,31 +153,31 @@ true
 ```js
 let date = new Date()
 ```
-     - What is the year today?
+  - What is the year today?
 ```js
 console.log(date.getFullYear())
 ```
-     - What is the month today as a number?
+  - What is the month today as a number?
 ```js
 console.log(date.getMonth())
 ```
-     - What is the date today?
+  - What is the date today?
 ```js
 console.log(date.getDate())
 ```
-     - What is the day today as a number?
+  - What is the day today as a number?
 ```js
 console.log(date.getDay())
 ```
-     - What is the hours now?
+  - What is the hours now?
 ```js
 console.log(date.getHours())
 ```
-     - What is the minutes now?
+  - What is the minutes now?
 ```js
 console.log(date.getMinutes())
 ```
-     - Find out the numbers of seconds elapsed from January 1, 1970 to now.
+  - Find out the numbers of seconds elapsed from January 1, 1970 to now.
 ```js
 let milliSec = Date.parse("1970-01-01")
 let dateNow = new Date()
@@ -224,14 +224,14 @@ console.log(`The area of the circle is ${areaOfCircle} and the circumference is 
 ```
 
 5) Calculate the slope, x-intercept and y-intercept of y = 2x -2
-     - x-intercept
+  - x-intercept
 ```js
 let xA = 0
 let yA = (2 * xA) - 2;
 console.log(yA)
 ```
 
-     - y-intercept
+  - y-intercept
 ```js
 let yB = 0
 let xB = (yB + B) / B
