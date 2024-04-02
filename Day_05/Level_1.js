@@ -1,27 +1,3 @@
-const countries = [
-  'Albania',
-  'Bolivia',
-  'Canada',
-  'Denmark',
-  'Ethiopia',
-  'Finland',
-  'Germany',
-  'Hungary',
-  'Ireland',
-  'Japan',
-  'Kenya'
-]
-
-const webTechs = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Redux',
-  'Node',
-  'MongoDB'
-]
-
 // 1) Declare an empty array
 let arr = [];
 
@@ -66,6 +42,14 @@ itCompanies.forEach((elem) => console.log(elem))
 itCompanies.forEach((elem) => console.log(elem.toUpperCase()))
 
 // 12) Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies. 
+let poppedItem = itCompanies.pop()
+let itCompaniesConverted = [];
+for (let x = 0; x < itCompanies.length - 1; x++) {
+  itCompaniesConverted.push(itCompanies[x] + ', ')
+}
+itCompaniesConverted.push(itCompanies[itCompanies.length - 1])
+let itCompaniesJoined = itCompaniesConverted.join('')
+console.log(`${itCompaniesJoined} and ${poppedItem} are big IT companies.`)
 
 // 13) Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 if (itCompanies.includes('Apple')) {
@@ -76,6 +60,21 @@ else {
 }
 
 // 14) Filter out companies which have more than one 'o' without the filter method
+function filteringCompanies() {
+  let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+  let arr = [];
+  itCompanies.forEach((elem) => {
+    if (elem.includes('o')) {
+      let index1 = elem.indexOf('o')
+      let index2 = elem.lastIndexOf('o') 
+      if (index1 !== index2) {
+        arr.push(elem)
+      }
+    }
+  })
+  console.log(arr)
+}
+filteringCompanies()
 
 // 15) Sort the array using sort() method
 let itCompaniesSorted = itCompanies.sort()
@@ -135,12 +134,7 @@ removeLastCompany()
 // 23) Remove all IT companies
 function removeAllITCompanies() {
   let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
-  console.log(itCompanies.length)
-  let index = 0
-  for (let a = 0; a < itCompanies.length; a++) {
-    index++
-  }
+  itCompanies = []
   console.log(itCompanies)
-  console.log(index)
 }
 removeAllITCompanies()
