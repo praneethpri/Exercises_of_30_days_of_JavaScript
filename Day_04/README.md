@@ -48,7 +48,8 @@ else {
 
   - ternary operator.
 ```js
-(a > b) ? console.log(`${a} is greater than ${b}`) : console.log(`${b} is greater than ${a}`)
+let comparison = (a > b) ? `${a} is greater than ${b}` : `${b} is greater than ${a}`
+console.log(comaparison)
 ```
 
 4) Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
