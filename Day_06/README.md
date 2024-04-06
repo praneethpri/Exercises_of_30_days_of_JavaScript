@@ -358,6 +358,7 @@ for (let u of countries) {
 ```
 
 12) Use the webTechs array to create the following array of arrays:
+```js
 let returnArrray = [];
 for (let f of webTechs) {
   let arr = [];
@@ -366,8 +367,10 @@ for (let f of webTechs) {
   returnArrray.push(arr)
 }
 console.log(returnArrray)
+```
 
 13) An application created using MongoDB, Express, React and Node is called a MERN stack app. Create the acronym MERN by using the array mernStack
+```js
 let mernStack = ['MongoDB', 'Express', 'React', 'Node']
 let acronymArray = [];
 for (let g of mernStack) {
@@ -375,22 +378,28 @@ for (let g of mernStack) {
 }
 let acronym = acronymArray.join('')
 console.log(acronym)
+```
 
 14) Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items.
+```js
 let array = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
 for (let q of array) {
   console.log(q)
 }
+```
 
 15) This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method.
+```js
 let fruits = ['banana', 'orange', 'mango', 'lemon']
 let fruitsReversed = [];
 for (let y of fruits) {
   fruitsReversed.unshift(y)
 }
 console.log(fruitsReversed)
+```
 
 16) Print all the elements of array as shown below.
+```js
 const fullStack = [
   ['HTML', 'CSS', 'JS', 'React'],
   ['Node', 'Express', 'MongoDB']
@@ -400,45 +409,55 @@ for (let c of fullStack) {
     console.log(d)
   }
 }
+```
 
 #### Exercise : Level 3
 
+```js
 const countries = require('./assets/countries')
 const webTechs = require('./assets/web_techs')
 const mernStack = require('./assets/mern_stack')
 const countriesWithInformation = require('./assets/countries-with-information')
+```
 
 1) Copy countries array(Avoid mutation)
+```js
 let countriesNew = [];
 for (let i of countries) {
   countriesNew.push(i)
 }
 console.log(countriesNew)
+```
 
 2) Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+```js
 let countries2 = [];
 for (let j of countries) {
   countries2.push(j)
 }
 let sortedCountries = countries2.sort()
 console.log(sortedCountries)
-
+```
 
 3) Sort the webTechs array and mernStack array 
+```js
 let webTechs2 = [];
 for (let k of webTechs) {
   webTechs2.push(k)
 }
 let sortedWebTechs = webTechs2.sort()
-
+```
+```js
 let mernStack2 = [];
 for (let l of mernStack) {
   mernStack2.push(l)
 }
 let sortedMernStack = mernStack2.sort()
 console.log(sortedMernStack)
+```
 
 4) Extract all the countries contain the word 'land' from the countries array and print it as array
+```js
 let countriesContainWordLand = [];
 for (let m of countries) {
   if (m.includes('land')) {
@@ -446,8 +465,10 @@ for (let m of countries) {
   }
 }
 console.log(countriesContainWordLand)
+```
 
 5) Find the country containing the hightest number of characters in the countries array
+```js
 let characterCount = [];
 for (let n of countries) {
   characterCount.push(n.length)
@@ -455,8 +476,10 @@ for (let n of countries) {
 let index = characterCount.indexOf(Math.max(...characterCount))
 let countryWithHighestNumberOfCharacters = countries[index]
 console.log(countryWithHighestNumberOfCharacters)
+```
 
 6) Extract all the countries containing only four characters from the countries array and print it as array 
+```js
 let countriesWithFourLetters = [];
 for (let o of countriesWithInformation) {
   if (o.length === 4) {
@@ -464,8 +487,10 @@ for (let o of countriesWithInformation) {
   }
 }
 console.log(countriesWithFourLetters)
+```
 
 7) Extract all the countries containing two or more words from the countries array and print it as array
+```js
 let twoWordedCountries = [];
 for (let p of countriesWithInformation) {
   if (p.includes(' ')) {
@@ -473,11 +498,14 @@ for (let p of countriesWithInformation) {
   }
 }
 console.log(twoWordedCountries)
+```
 
 8) Reverse the countries array and capitalize each country and stored it as an array
+```js
 let countriesReversedAndCapitalized = [];
 for (let q of countriesWithInformation) {
   countriesReversedAndCapitalized.unshift(q.toUpperCase())
 }
 console.log(countriesReversedAndCapitalized)
+```
 
