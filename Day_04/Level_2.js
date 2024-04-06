@@ -27,7 +27,7 @@ else {
 //   - December, January or February, the season is Winter.
 //   - March, April or May, the season is Spring
 //   - June, July or August, the season is Summer
-let month = parseInt('Enter the month : ')
+let month = prompt('Enter the month : ')
 if (month === 'September' || month === 'October' || month === 'November') {
   console.log(`${month} is in Autumn season.`)
 }
