@@ -1,4 +1,4 @@
-// 1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+// // 1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
 function userIdGeneratedByUser() {
   let numOfCharacters = prompt("Enter the number of Characters : ");
   let numOfIds = prompt("How many IDs Do you need ? : ");
@@ -86,3 +86,67 @@ function arrayOfRgbColors(v) {
 arrayOfRgbColors(7);
 
 // 4) Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
+function convertHexaToRgb(hexCode) {
+  let hexValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+  function convertSingleNum(item) {
+    switch (item) {
+      case 1:
+        return 1;
+        break;
+      case 2:
+        return 2;
+        break;
+      case 3:
+        return 3;
+        break;
+      case 4:
+        return 4;
+        break;
+      case 5:
+        return 5;
+        break;
+      case 6:
+        return 6;
+        break;
+      case 7:
+        return 7;
+        break;
+      case 8:
+        return 8;
+        break;
+      case 9:
+        return 9;
+        break;
+      case 'a':
+        return 10;
+        break;
+      case 'b':
+        return 11;
+        break;
+      case 'c':
+        return 12;
+        break;
+      case 'd':
+        return 13;
+        break;
+      case 'e':
+        return 14;
+        break;
+      default:
+        return 15;
+    }
+  }
+  let firstNum = convertSingleNum(hexCode[1]) * 16
+  let secondNum = convertSingleNum(hexCode[2]) * 1
+  let rValue = firstNum + secondNum
+  let thirdNum = convertSingleNum(hexCode[3]) * 16
+  let fourthNum = convertSingleNum(hexCode[4]) * 1
+  let gValue = thirdNum + fourthNum
+  let fifthNum = convertSingleNum(hexCode[5]) * 16
+  let sixthNum = convertSingleNum(hexCode[6]) * 1
+  let bValue = fifthNum + sixthNum
+  console.log(`rgb(${rValue},${gValue},${bValue})`)
+}
+convertHexaToRgb('#c8b471')
+
+// 6) Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
