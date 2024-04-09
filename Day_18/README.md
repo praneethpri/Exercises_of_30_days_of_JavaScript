@@ -104,3 +104,24 @@ let readCountriesAPI = async () => {
 }
 readCountriesAPI()
 ```
+
+3) Read the countries api and count total number of languages in the world used as officials.
+```js
+const languageCount = async () => {
+  try {
+    const fetchingCountries = await fetch(countriesAPI)
+    const response = await fetchingCountries.json()
+    let languageArray = [];
+    response.forEach((elem) => languageArray.push(elem.languages))
+    let languageNames = [];
+    languageArray.forEach((element) => {element.forEach((e) => {languageNames.push(e.name)})})
+    let LanguageNames = new Set(languageNames)
+    console.log(LanguageNames.size)
+  }
+  catch (error) {
+    console.log(error)
+  }
+}
+languageCount()
+```
+
