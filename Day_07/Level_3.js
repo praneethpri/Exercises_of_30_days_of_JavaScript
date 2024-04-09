@@ -1,36 +1,36 @@
-// // 1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
-function userIdGeneratedByUser() {
-  let numOfCharacters = prompt("Enter the number of Characters : ");
-  let numOfIds = prompt("How many IDs Do you need ? : ");
-  let a = 0;
-  while (a < numOfIds) {
-    function userIdGenerator(j) {
-      let arr = [];
-      function genOneNum() {
-        while (true) {
-          let num = Math.floor(Math.random() * 123);
-          if ((num >= 48 && num <= 57) || num >= 97) {
-            arr.push(String.fromCharCode(num));
-            break;
-          } else {
-            continue;
-          }
-        }
-      }
-      let i = 0;
-      while (i < j) {
-        genOneNum();
-        i++;
-      }
-      let string = arr.join("");
-      console.log(string);
-    }
-    userIdGenerator(numOfCharacters);
-    a++;
-  }
-}
-userIdGeneratedByUser();
-
+// // // 1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+// function userIdGeneratedByUser() {
+//   let numOfCharacters = prompt("Enter the number of Characters : ");
+//   let numOfIds = prompt("How many IDs Do you need ? : ");
+//   let a = 0;
+//   while (a < numOfIds) {
+//     function userIdGenerator(j) {
+//       let arr = [];
+//       function genOneNum() {
+//         while (true) {
+//           let num = Math.floor(Math.random() * 123);
+//           if ((num >= 48 && num <= 57) || num >= 97) {
+//             arr.push(String.fromCharCode(num));
+//             break;
+//           } else {
+//             continue;
+//           }
+//         }
+//       }
+//       let i = 0;
+//       while (i < j) {
+//         genOneNum();
+//         i++;
+//       }
+//       let string = arr.join("");
+//       console.log(string);
+//     }
+//     userIdGenerator(numOfCharacters);
+//     a++;
+//   }
+// }
+// userIdGeneratedByUser();
+//
 // 2) Write a function name rgbColorGenerator and it generates rgb colors.
 function rgbColorGenerator() {
   let arr = [];
@@ -150,3 +150,57 @@ function convertHexaToRgb(hexCode) {
 convertHexaToRgb('#c8b471')
 
 // 6) Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
+function convertRgbToHexa(rgbString) {
+  let spllittedPattern = /rgb\(|,|\)/
+  let spliitted = rgbString.split(spllittedPattern);
+  let firstNum = spliitted[1]
+  let secondNum = spliitted[2]
+  let thirdNum = spliitted[3]
+  function numToHex(item) {
+    let itemNum = parseInt(item)
+    let itemNumDivided = Math.round(itemNum / 16)
+    let itemNumRemainder = itemNum % 16
+    let itemNumRemainderMultiplied = itemNumRemainder * 16
+    let arr = [];
+    function numConverted(b) {
+      if (b >= 0 && b <= 9) {
+        return b;
+      }
+      else {
+        switch (b) {
+          case 10:
+            return 'a';
+            break;
+          case 11:
+            return 'b';
+            break;
+          case 12:
+            return 'c';
+            break;
+          case 13:
+            return 'd';
+            break;
+          case 14:
+            return 'e';
+            break;
+          default:
+            return 'f';
+        }
+      }
+    }
+    arr.push(numConverted(itemNumDivided))
+    arr.push(numConverted(itemNumRemainderMultiplied))
+    let string = arr.join('')
+    return string;
+  }
+  let arr = [];
+  arr.push(numToHex(firstNum))
+  arr.push(numToHex(secondNum))
+  arr.push(numToHex(thirdNum))
+  let string = arr.join('')
+  console.log(`#${string}`)
+}
+convertRgbToHexa('rgb(207,255,37)')
+
+
+// 5)  
