@@ -24,4 +24,4 @@
   - Completed challenge has background green
   - Ongoing challenge has background yellow
   - Coming challenges have background red
-
+![mini project screenshot gif](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_21/Level_3/mini-project-screeshot.gif)
