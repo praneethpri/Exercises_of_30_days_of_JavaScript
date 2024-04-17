@@ -135,4 +135,12 @@ valuesOfUsers.push(Object.values(users))
 ```
 
 7) Use the countries object to print a country name, capital, populations and languages.
+```js
+for (let i of countries) {
+  console.log(i.name, i.capital, i.population, i.languages)
+}
+```
+
+#### Exercise : Level 3
+
 
