@@ -1,0 +1,22 @@
+.main-div {
+  width: 500pt;
+  border: 1px solid gray;
+  transform: translateX(50%);
+  height: 1200pt;
+  display: flex;
+  justify-content: center;
+}
+
+#div-pressed-key {
+  text-align: center;
+  border: 1px solid gray;
+  width: 350pt;
+  height: 150pt;
+  box-shadow: 5px 8px grey;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30pt;
+}
+
