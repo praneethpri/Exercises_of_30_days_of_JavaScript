@@ -1,0 +1,51 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(/usr/share/fonts/downloaded/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background-image {
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  position: absolute;
+}
+
+.text-of-app {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.information-boxes {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Montserrat, monospace;
+  font-size: 30pt;
+  text-shadow: 2px 2px grey;
+}
+
+.information-boxes > input {
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
+
+.information-boxes > select {
+  margin-right: 20pt;
+  margin-left: 20pt;
+}
+
+.information-boxes > button {
+  margin-left: 20pt;
+  margin-right: 20pt;
+}
