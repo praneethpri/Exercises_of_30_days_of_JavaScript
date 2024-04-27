@@ -1,0 +1,63 @@
+:root {
+  --orange: #fb8004
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+h1 {
+  text-align: center;
+  color: var(--orange);
+  font-family:  Montserrat, monospace;
+  font-size: 30pt;
+}
+
+.country-count {
+  text-align: center;
+  font-family: Montserrat, monospace;
+  font-size: 15pt;
+}
+
+button {
+  border: none;
+  background-color: var(--orange);
+  padding: 6px 15px 6px 15px;
+  margin: 5px 18px 5px 18px;
+  font-size: 9pt;
+}
+
+.data-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.data-box-text {
+  text-align: center;
+  font-family: Montserrat, monospace;
+}
+
+.data-charts {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.first-data-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30pt;
+}
+
+.box {
+  width: 500pt;
+  height: 50pt;
+  background-color: var(--orange);
+}
+
+.name, .number {
+  margin: 8px 35px 8px 35px;
+  font-family: Montserrat, monospace;
+  font-size: 14pt;
+}
