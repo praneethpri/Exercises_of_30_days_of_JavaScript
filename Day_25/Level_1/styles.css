@@ -40,24 +40,6 @@ button {
 .data-charts {
   display: flex;
   justify-content: center;
-  flex-flow: column;
-}
-
-.first-data-set {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30pt;
-}
-
-.box {
-  width: 500pt;
-  height: 50pt;
-  background-color: var(--orange);
-}
-
-.name, .number {
-  margin: 8px 35px 8px 35px;
-  font-family: Montserrat, monospace;
-  font-size: 14pt;
+  flex-flow: column wrap;
+  align-content: flex-start;
 }
