@@ -9,11 +9,19 @@
 5) Set a text content to paragraph the fourth paragraph,Fourth Paragraph
 6) Set id and class attribute for all the paragraphs using different attribute setting methods
 
+Exercise Details :
+  - [index.html](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_21/Level_1/index.html)
+  - [index.js](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_21/Level_1/index.js)
+
 #### Exercise: Level 2
 
 1) Change stye of each paragraph using JavaScript(eg. color, background, border, font-size, font-family)
 2) Select all paragraphs and loop through each elements and give the first and third paragraph a color of green, and the second and the fourth paragraph a red color
 3) Set text content, id and class to each paragraph
+
+Exercise Details :
+  - [index.html](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_21/Level_2/index.html)
+  - [index.js](https://github.com/praneethpri/Exercises_of_30_days_of_JavaScript/blob/main/Day_21/Level_2/index.js)
 
 #### Exercise: Level 3
 #### DOM: Mini project 1
