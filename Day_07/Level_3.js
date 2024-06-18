@@ -1,36 +1,37 @@
-// // // 1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
-// function userIdGeneratedByUser() {
-//   let numOfCharacters = prompt("Enter the number of Characters : ");
-//   let numOfIds = prompt("How many IDs Do you need ? : ");
-//   let a = 0;
-//   while (a < numOfIds) {
-//     function userIdGenerator(j) {
-//       let arr = [];
-//       function genOneNum() {
-//         while (true) {
-//           let num = Math.floor(Math.random() * 123);
-//           if ((num >= 48 && num <= 57) || num >= 97) {
-//             arr.push(String.fromCharCode(num));
-//             break;
-//           } else {
-//             continue;
-//           }
-//         }
-//       }
-//       let i = 0;
-//       while (i < j) {
-//         genOneNum();
-//         i++;
-//       }
-//       let string = arr.join("");
-//       console.log(string);
-//     }
-//     userIdGenerator(numOfCharacters);
-//     a++;
-//   }
-// }
-// userIdGeneratedByUser();
-//
+//1) Modify the userIdGenerator function. Declare a function name userIdGeneratedByUser. It doesn’t take any parameter but it takes two inputs using prompt(). One of the input is the number of characters and the second input is the number of ids which are supposed to be generated.
+
+function userIdGeneratedByUser() {
+  let numOfCharacters = prompt("How many characters would you like to use? ");
+  let numOfIds = prompt("How many IDs would you like to create? : ");
+  function userIdGenerator(l) {
+    let arr = [];
+    function genOneNum() {
+      while (true) {
+        let num = Math.floor(Math.random() * 123);
+        if ((num >= 48 && num <= 57) || num >= 97) {
+          arr.push(String.fromCharCode(num));
+          break;
+        } else {
+          continue;
+        }
+      }
+    }
+    let i = 0;
+    while (i < l) {
+      genOneNum();
+      i++;
+    }
+    let string = arr.join("");
+    console.log(string);
+  }
+  let u = 0;
+  while (u < numOfIds) {
+    userIdGenerator(numOfCharacters);
+    u++;
+  }
+}
+userIdGeneratedByUser();
+
 // 2) Write a function name rgbColorGenerator and it generates rgb colors.
 function rgbColorGenerator() {
   let arr = [];
@@ -87,7 +88,7 @@ arrayOfRgbColors(7);
 
 // 4) Write a function convertHexaToRgb which converts hexa color to rgb and it returns an rgb color.
 function convertHexaToRgb(hexCode) {
-  let hexValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+  let hexValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"];
   function convertSingleNum(item) {
     switch (item) {
       case 1:
@@ -117,90 +118,88 @@ function convertHexaToRgb(hexCode) {
       case 9:
         return 9;
         break;
-      case 'a':
+      case "a":
         return 10;
         break;
-      case 'b':
+      case "b":
         return 11;
         break;
-      case 'c':
+      case "c":
         return 12;
         break;
-      case 'd':
+      case "d":
         return 13;
         break;
-      case 'e':
+      case "e":
         return 14;
         break;
       default:
         return 15;
     }
   }
-  let firstNum = convertSingleNum(hexCode[1]) * 16
-  let secondNum = convertSingleNum(hexCode[2]) * 1
-  let rValue = firstNum + secondNum
-  let thirdNum = convertSingleNum(hexCode[3]) * 16
-  let fourthNum = convertSingleNum(hexCode[4]) * 1
-  let gValue = thirdNum + fourthNum
-  let fifthNum = convertSingleNum(hexCode[5]) * 16
-  let sixthNum = convertSingleNum(hexCode[6]) * 1
-  let bValue = fifthNum + sixthNum
-  console.log(`rgb(${rValue},${gValue},${bValue})`)
+  let firstNum = convertSingleNum(hexCode[1]) * 16;
+  let secondNum = convertSingleNum(hexCode[2]) * 1;
+  let rValue = firstNum + secondNum;
+  let thirdNum = convertSingleNum(hexCode[3]) * 16;
+  let fourthNum = convertSingleNum(hexCode[4]) * 1;
+  let gValue = thirdNum + fourthNum;
+  let fifthNum = convertSingleNum(hexCode[5]) * 16;
+  let sixthNum = convertSingleNum(hexCode[6]) * 1;
+  let bValue = fifthNum + sixthNum;
+  console.log(`rgb(${rValue},${gValue},${bValue})`);
 }
-convertHexaToRgb('#c8b471')
+convertHexaToRgb("#c8b471");
 
 // 6) Write a function convertRgbToHexa which converts rgb to hexa color and it returns an hexa color.
 function convertRgbToHexa(rgbString) {
-  let spllittedPattern = /rgb\(|,|\)/
+  let spllittedPattern = /rgb\(|,|\)/;
   let spliitted = rgbString.split(spllittedPattern);
-  let firstNum = spliitted[1]
-  let secondNum = spliitted[2]
-  let thirdNum = spliitted[3]
+  let firstNum = spliitted[1];
+  let secondNum = spliitted[2];
+  let thirdNum = spliitted[3];
   function numToHex(item) {
-    let itemNum = parseInt(item)
-    let itemNumDivided = Math.round(itemNum / 16)
-    let itemNumRemainder = itemNum % 16
-    let itemNumRemainderMultiplied = itemNumRemainder * 16
+    let itemNum = parseInt(item);
+    let itemNumDivided = Math.round(itemNum / 16);
+    let itemNumRemainder = itemNum % 16;
+    let itemNumRemainderMultiplied = itemNumRemainder * 16;
     let arr = [];
     function numConverted(b) {
       if (b >= 0 && b <= 9) {
         return b;
-      }
-      else {
+      } else {
         switch (b) {
           case 10:
-            return 'a';
+            return "a";
             break;
           case 11:
-            return 'b';
+            return "b";
             break;
           case 12:
-            return 'c';
+            return "c";
             break;
           case 13:
-            return 'd';
+            return "d";
             break;
           case 14:
-            return 'e';
+            return "e";
             break;
           default:
-            return 'f';
+            return "f";
         }
       }
     }
-    arr.push(numConverted(itemNumDivided))
-    arr.push(numConverted(itemNumRemainderMultiplied))
-    let string = arr.join('')
+    arr.push(numConverted(itemNumDivided));
+    arr.push(numConverted(itemNumRemainderMultiplied));
+    let string = arr.join("");
     return string;
   }
   let arr = [];
-  arr.push(numToHex(firstNum))
-  arr.push(numToHex(secondNum))
-  arr.push(numToHex(thirdNum))
-  let string = arr.join('')
-  console.log(`#${string}`)
+  arr.push(numToHex(firstNum));
+  arr.push(numToHex(secondNum));
+  arr.push(numToHex(thirdNum));
+  let string = arr.join("");
+  console.log(`#${string}`);
 }
-convertRgbToHexa('rgb(207,255,37)')
+convertRgbToHexa("rgb(207,255,37)");
 
-
-// 5)  
+// 7)
