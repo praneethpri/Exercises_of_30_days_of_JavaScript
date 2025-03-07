@@ -12,6 +12,19 @@ h1 {
   margin-left: 3.5rem;
   margin-top: 2rem;
   background-color: tan;
+  display: flex;
+  align-items: center;
+}
+
+.header-box > p:first-of-type {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+}
+
+.header-box > p:last-of-type {
+  margin-left: 1rem;
+  font-family: "Montserrat", serif;
+  font-size: 1.3rem;
 }
 
 .introduction {
@@ -69,5 +82,5 @@ h1 {
   font-size: 2rem;
   font-family: "Kanit", sans-serif;
   font-weight: bold;
-  text-shadow: 0.2rem 0.2rem gray;
+  text-shadow: 0.2rem 0.2rem gainsboro;
 }
