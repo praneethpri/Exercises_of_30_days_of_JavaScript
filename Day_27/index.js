@@ -32,16 +32,13 @@ let technologyColors = [
   { tech: "Linux", color: "#FF6A00" }, // Linux - Orange
 ];
 
-var i = 0;
-function technologiesOnRepeat() {
-  setTimeout(() => {
-    technologiesWords.innerHTML = `${technologyColors[i].tech}`;
-    technologiesWords.style.color = `${technologyColors[i].color}`;
-    i++;
-    if (i < technologyColors.length) {
-      technologiesOnRepeat();
-    }
-  }, 2000);
+function technicalWords() {
+  for (let i = 0; i < technologyColors.length; i++) {
+    setTimeout(() => {
+      technologiesWords.innerHTML = `${technologyColors[i].tech}`
+      technologiesWords.style.color = `${technologyColors[i].color}`
+    }, 2000)
+  }
 }
 
-technologiesOnRepeat();
+technicalWords()
