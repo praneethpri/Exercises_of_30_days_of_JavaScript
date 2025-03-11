@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+.add-player-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-player-bar > input {
+  margin: 0 1rem 0 1rem;
+}
+
+.add-player-bar > button {
+  margin: 0 1rem 0 1rem;
+}
+
+.snippet {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
