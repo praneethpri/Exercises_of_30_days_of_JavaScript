@@ -31,14 +31,3 @@ let technologyColors = [
   { tech: "Git", color: "#F05032" }, // Git - Red
   { tech: "Linux", color: "#FF6A00" }, // Linux - Orange
 ];
-
-function technicalWords() {
-  for (let i = 0; i < technologyColors.length; i++) {
-    setTimeout(() => {
-      technologiesWords.innerHTML = `${technologyColors[i].tech}`
-      technologiesWords.style.color = `${technologyColors[i].color}`
-    }, 2000)
-  }
-}
-
-technicalWords()
