@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
 }
 
 .add-player-bar {
@@ -20,4 +22,86 @@ h1 {
 .snippet {
   text-align: center;
   margin: 2rem 0 1rem 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.players-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.player-information-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 75%;
+  height: 6rem;
+  background-color: tan;
+  margin: 0.8rem 0 0.4rem 0;
+}
+
+.player-information-bar > div {
+  width: 13rem;
+  margin: 0 1rem 0 1rem;
+  height: 5rem;
+  border: 1px solid black;
+}
+
+.placements-name {
+  font-family: "Open Sans", sans-serif;
+  height: 75%;
+  font-size: 1.1rem;
+}
+
+.placements-date {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+
+.country-placement {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.score-placement {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+.operative-buttons-placement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.operative-buttons-placement > div {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 0.6rem 0 0.6rem;
+  background-color: white;
+}
+
+.minus-5-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.plus-5-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
 }
